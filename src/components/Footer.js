@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'; //style package.
-import BgImg from '../assets/Starbucks-Tumblers.jpg'
-import {MdKeyboardArrowRight} from 'react-icons/md'
+import BgImg from '../assets/Uber-Eats.jpg'
 
 //meneal style pakage 
 const Section = styled.section`
-  background-image: url(${BgImg});
+  /* background-image: url(${BgImg}); */
   height: 785px;
   display: block;
   background-repeat: no-repeat;
   background-size: contain;
+  margin: 0 auto;
 `;
 
 const Content = styled.div`
@@ -23,21 +23,26 @@ const Left = styled.div`
 `;
 
 const Title = styled.p`
-  width: 800px;
   font-size: 40px;
-  color: #fff;
+  color: black;
   font-weight: 400;
   text-align: center;
   font-weight:bold;
-  margin-top: 358px;
+  width: 800px;
+`;
+
+const Img = styled.div`
+   padding-top: 50px;
 `;
 
 const Desc = styled.p`
   width: 800px;
   font-size: 20px;
-  color: #9ea0ac;
+  color: black;
   line-height: 30px;
-  margin-top: 58px;
+  margin-top: 1500px;
+  font-weight:normal;
+  text-align: center;
 `;
 
 const Button = styled.a`
@@ -45,7 +50,7 @@ const Button = styled.a`
   justify-content: center;
   align-items: center;
   border-radius: 18px;
-  margin-top: 138px;
+  margin-top: 58px;
   width: 371px;
   height: 71px;
   line-height: 71px;
@@ -58,25 +63,22 @@ const Button = styled.a`
   box-shadow: 0 15px 14px rgb(0 42 177 / 12%);
 `;
 
-const Hero = () => {
+
+const Footer = () => {
     return (
         <div>
             <Section>
                 <Content>
                     <Left>
                         <Title>
-                        Starbucks Ushers in the Season <br />of Giving
+                            
                         </Title>
-                        {/* <Desc>
-                            Starbucks is ready to turn up the seasonal giving spirit with special deals
-                            and ways to give on the Starbucks® app, through Starbucks Delivers, and in stores.
-                            From affordable tumblers to special offers, customers can find the perfect gifts
-                            for those on their list this holiday season.
-                        </Desc> */}
-                        {/* <Button href='https://github.com/hjh6609' target='_blank'>
-                            <span>Season of Giving</span>
-                            <MdKeyboardArrowRight />
-                        </Button> */}
+                        <Img>
+                            
+                        </Img>
+                        <Desc>
+                         ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.
+                        </Desc>
                     </Left>
                 </Content>
             </Section>
@@ -84,4 +86,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default Footer
